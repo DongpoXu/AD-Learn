@@ -1,4 +1,4 @@
-# Altium Designer 入门教程
+# **Altium Designer 入门教程**
 
 > 注：使用了引用语法但不是引用：
 >
@@ -14,7 +14,7 @@
  * Author: 许东坡
  * Email: aelousdp@163.com
  * Date: 2019.11.26
- * Version: 1.0.0
+ * Version: 1.0.1
  * Description: Altium Designer入门
  * Function List:
     前言
@@ -27,12 +27,12 @@
     结束语
     引用致谢
     附录
- * History: NULL
+ * History: 1
  * Others: NULL
 **/
 ```
 
-## 前言
+## **1. 前言**
 
 我本身是硬件出身的，最开始接触的是**protel 99SE**，非常轻量，用来画一些简单的电路图作为入门是可以的，之后做比赛接触到了**Altium Designer**（以下简称 AD），其实 AD 对于我们现阶段的使用其实是够用了，网上很多人说**Candence**很厉害，包括我身边以前实验室的朋友都夸它好，有人夸说明肯定又优势，但是都是一门工具，要我说，武功再好，也怕菜刀，工具趁手，就是好工具。
 
@@ -48,7 +48,7 @@
 
 <div STYLE="page-break-after: always;"></div>
 
-## 安装软件
+## **2. 安装软件**
 
 工欲善其事，必先利其器。以下是我常用的软件版本。
 
@@ -58,9 +58,9 @@
 
 文件具体内容如下：
 
-![文件内容 1](images/文件内容1.png)
+<image src="images/文件内容1.png" width="400px" style="display:block" alt="文件内容1"></image>
 
-![文件内容 2](images/文件内容2.png)
+<image src="images/文件内容2.png" width="400px" style="display:block" alt="文件内容2"></image>
 
 因为个人原因，电脑存储不够，先不进行下载安装，具体详细的安装过程找时间补齐。
 
@@ -70,97 +70,101 @@
 
 剑客有云，心中有剑，手中无剑。
 
-## 新建工程
+<div STYLE="page-break-after: always;"></div>
+
+## **3. 新建工程**
 
 下面以个人电脑做示范，开始新建一个工程，完成一个**小工程的绘制**：具体内容暂时选定为简单的**光控灯实例**，毕竟**授人以鱼不如授人以渔**本教程目的在于带领大家熟悉软件，告诉大家一些我可能遇到的问题。如有补充可以联系作者：_aelousdp@163.com_
 
-### 新建
+### **3.1 新建**
 
 点击 File -> New -> Project 新建一个工程
 
-![新建工程](images/新建工程.png)
+<div style="text-align:left;"><image src="images/新建工程.png" width="400px" style="display:inline-block;" alt="新建工程"></image></div>
 
-### 选择
+### **3.2 选择**
 
 选择默认即可，根据个人工程位置修改 Name(文件名) 和 Location(路径)
 
-![工程选择](images/工程选择.png)
+<div style="text-align:left;"><image src="images/工程选择.png" width="400px" style="display:inline-block;" alt="工程选择"></image></div>
 
 > 注：希望大家在新建工程的时候，养成一个良好的习惯，严禁用 a、aa、bbb 等命名，实在是太业余了，还有工程路径，一定要定义一个合理的文件夹，方便自己找得到的那种，每个工程文件都是自己知识的结晶，是自己努力的成果，不可懈怠。
 
 Repository(仓库)和对应的 Folder(文件夹)不需要选择，进入工程之后我们再导入。
 
-### 建立完成
+### **3.3 建立完成**
 
 建好的工程如下所示：诺，一片空白，不要慌，一步一步来。
 
-![新建完成](images/新建完成.png)
+<div style="text-align:left;"><image src="images/新建完成.png" height="310px" style="display:inline-block;" alt="新建完成"></image></div>
 
-### 额外补充：设置中文方式：
+### **3.4 额外补充：设置中文方式：**
 
 DXP -> Preferences -> System -> General
 
-![中文1](images/中文1.png)
-
-![中文2](images/中文2.png)
+<div style="text-align:left;"><image src="images/中文1.png" height="180px" style="display:inline;" alt="中文1"></image>&nbsp;<image src="images/中文2.png" height="180px" style="display:inline;" alt="中文2"></image></div>
 
 点选**Use localized resources**，弹窗点击 OK，然后点击 Apply。重启 AD 即可。
 
-不过不建议使用中文，如果连这点英文都不懂，英文芯片手册看不了，不适合做硬件了。
+> 不过不建议使用中文，如果连这点英文都不懂，英文芯片手册看不了，不适合做硬件了。
 
 重启后中文界面如下所示：
 
-![中文3](images/中文3.png)
+<div style="text-align:left;"><image src="images/中文3.png" width="350px" style="display:inline-block;" alt="中文3"></image></div>
 
-### 创建文件
+### **3.5 创建文件**
 
-本步骤本来在绘制库中，二次修改做出调整。
+```text
+注：本步骤本来在绘制库中，二次修改做出调整。
+```
 
-### 新建原理图库
+### **3.6 新建原理图库**
 
 打开刚才我们建立好的工程，点击 File -> New -> Library -> Schematic Library 具体操作如下，新建原理图库：
 
-![新建库1](images/新建库1.png)
+<div style="text-align:left;"><image src="images/新建库1.png" width="350px" style="display:inline-block;" alt="新建库1"></image></div>
 
 建好的库如下所示：
 
-![新建库2](images/新建库2.png)
+<div style="text-align:left;"><image src="images/新建库2.png" width="350px" style="display:inline-block;" alt="新建库2"></image></div>
 
 什么都没有，还是不要慌，我们先操作以下界面，鼠标点击界面一次，按下键盘 shift 键，滚动鼠标滚轮（没有鼠标请淘宝购买），屏幕会左右滚动，按下 ctrl 滚动鼠标滚轮，屏幕会放大缩小，右键长按，可以进行拖拽。
 
 保存文件，自己重新命名。
 
-具体的快捷键在查询资料后会建立附录提供给大家。
+具体的快捷键请见附录。
 
-### 新建封装库
+### **3.7 新建封装库**
 
 我们建立好原理图库之后，要给对应的原理图库建立对应的封装库。
 
 点击 File -> New -> Library -> PCB Library 具体操作如下，新建封装库：
 
-![新建库3](images/新建库3.png)
+<div style="text-align:left;"><image src="images/新建库3.png" width="350px" style="display:inline-block;" alt="新建库3"></image></div>
 
 快捷键与原理图库类似，自己保存。
 
-### 创建原理图文件
+### **3.8 创建原理图文件**
 
 接下来我们创建**原理图文件**
 点击 File -> New -> Schematic 具体操作如下，新建封装库：
 
-![新建库4](images/新建库4.png)
+<div style="text-align:left;"><image src="images/新建库4.png" width="350px" style="display:inline-block;" alt="新建库4"></image></div>
 
 自己保存并重命名。
 
-### 创建 PCB 文件
+### **3.9 创建 PCB 文件**
 
 接下来我们创建**PCB 文件**
 点击 File -> New -> PCB 具体操作如下，新建封装库：
 
-![新建库5](images/新建库5.png)
+<div style="text-align:left;"><image src="images/新建库5.png" width="350px" style="display:inline-block;" alt="新建库5"></image></div>
 
 自己保存并重命名。
 
-## 绘制库
+<div STYLE="page-break-after: always;"></div>
+
+## **4. 绘制库**
 
 现在我们的文件结构如下所示：
 
@@ -174,32 +178,32 @@ DXP -> Preferences -> System -> General
   - Schematic Lib
     - TEST_SCHLIB.SchLib (原理图库)
 
-![文件结构](images/文件结构.png)
+<div style="text-align:left;"><image src="images/文件结构.png" height="200px" style="display:inline-block;" alt="文件结构"></image></div>
 
 接下来，我们由 “0” 开始生 “1”。
 
-### 确定器件
+### **4.1 确定器件**
 
 > 说明：很多时候，我们参与一个项目，项目的库什么的并不需要我们自己去完成，很多实验室/公司/团体的前辈们已经完成了，我们需要尽快去熟悉查看被人绘制完毕的库即可。但是！！！这些都是基本功，还是得懂，因为总有些东西是你没有接触到的，是新的元器件，新的封装，所以深学必须掌握，工作可以选学。
 
 首先，我们要知道，我们要完成的是一个光控灯，光控灯的原理图如下图所示：
 
-<image src="images/光控灯原理图.png" height="300px" style="display:block" alt="光控灯原理图"></image>
+<image src="images/光控灯原理图.png" height="200px" style="display:block" alt="光控灯原理图"></image>
 
 其实稍微懂点硬件的朋友一看就知道，电阻 R2 既是光敏电阻，Q1 为 NPN 三极管，由 R1 和 R2 进行分压，控制 Q1 开关，实现 LED1 的亮灭。
 
 我们对以上的几个器件进行绘制，个人原因，具体物件图均来源于百度图片：
 选择器件有：碳膜电阻 ｜ 光敏电阻 ｜ Φ5 直插 LED ｜ 2N3904
 
-<image src="images/碳膜电阻.png" height="150px" style="display:inline" alt="碳膜电阻"></image><image src="images/光敏电阻.png" height="150px" style="display:inline" alt="光敏电阻"></image><image src="images/直插LED.png" height="150px" style="display:inline" alt="直插LED"></image><image src="images/NPN三极管.png" height="150px" style="display:inline" alt="NPN三极管"></image>
+<image src="images/碳膜电阻.png" height="100px" style="display:inline" alt="碳膜电阻"></image> <image src="images/光敏电阻.png" height="100px" style="display:inline" alt="光敏电阻"></image> <image src="images/直插LED.png" height="100px" style="display:inline" alt="直插LED"></image> <image src="images/NPN三极管.png" height="100px" style="display:inline" alt="NPN三极管"></image>
 
 电池部分就不画了，直接留开窗接稳压电源即可。
 
 现在我们已经确定了我们需要的东西(现实中的物件)，有了软件创建的工程以及对应的原理图库和封装库。
 
-### 绘制原理图库
+### **4.2 绘制原理图库**
 
-#### 碳膜电阻原理图
+#### **碳膜电阻原理图**
 
 我们这里并不绘制集成封装，所以每个元件都是先绘制原理图库，再绘制封装库，首先绘制碳膜电阻原理图库，原理图库，顾名思义，是在我们绘制原理图时为我们提供方便的库，软件安装时，系统就已经提供了一些常用的库，其实已经有了电阻等元件。我们先不管官方提供的，我们自己从头开始画，学习永远是一个痛苦的过程，从无到有。
 
@@ -207,11 +211,11 @@ DXP -> Preferences -> System -> General
 
 点击如下位置（或者按下快捷键 P + L ）：
 
-![绘制1](images/绘制1.png)
+<div style="text-align:left;"><image src="images/绘制1.png" height="200px" style="display:inline-block;" alt="绘制1"></image></div>
 
 点击空白处，熟悉以下画线，然后画出一个矩形如下：
 
-![绘制矩形](images/绘制矩形.png)
+<div style="text-align:left;"><image src="images/绘制矩形.png" width="280px" style="display:inline-block;" alt="绘制矩形"></image></div>
 
 当然如果你有多的时间，也可以逐一实验绘制区域的每一个功能。希望大家有兴趣可以尝试。
 
@@ -219,7 +223,7 @@ DXP -> Preferences -> System -> General
 
 点击如下位置（或者按下快捷键 P + P ）：
 
-![绘制2](images/绘制2.png)
+<div style="text-align:left;"><image src="images/绘制2.png" height="200px" style="display:inline-block;" alt="绘制2"></image></div>
 
 此时鼠标点击空白处，会有一根引脚出现，按下**空格键**可以**旋转 90 度**，点击两次出现两个引脚，右键取消点选。
 
@@ -227,11 +231,11 @@ DXP -> Preferences -> System -> General
 
 大家可能绘制的时候，遇到我现在遇到的尴尬境地：
 
-![绘制3](images/绘制3.png)
+<div style="text-align:left;"><image src="images/绘制3.png" width="280px" style="display:inline-block;" alt="绘制3"></image></div>
 
 引脚怎么都移动不到蓝色的纵轴中间去。这时候点击栅格：
 
-![绘制4](images/绘制4.png)
+<div style="text-align:left;"><image src="images/绘制4.png" height="200px" style="display:inline-block;" alt="绘制4"></image></div>
 
 在弹窗中将 10 改为 1，这是你可以移动的最小单位就变小了。
 
@@ -243,25 +247,25 @@ DXP -> Preferences -> System -> General
 
 自己琢磨琢磨，把元件绘制成如下样式：
 
-![绘制5](images/绘制5.png)
+<div style="text-align:left;"><image src="images/绘制5.png" width="280px" style="display:inline-block;" alt="绘制5"></image></div>
 
 这样我们的一个电阻原理图封装，就绘制完毕了。点击 Tools -> Rename Compontent 对元件进行重命名为 TEST_RES 即可。
 
 此时回到原理图文件，在右侧 Libraries 中找到我们的原理图库：
 
-![绘制6](images/绘制6.png)
+<div style="text-align:left;"><image src="images/绘制6.png" height="300px" style="display:inline-block;" alt="绘制6"></image></div>
 
 点击，即可看到对应的元件，双击，在空白处即可放置。
 
-#### 其他元件
+#### **其他元件**
 
 - 光敏电阻，很简单，在这个电阻的基础上，加几个箭头表示光敏即可。回到原理图库，点击 Tools -> New Component，新建一个元件。将之前的复制粘贴过来，然后画个箭头即可。就不做详细示范了。
 - 绘制直插 LED，emmmm，我相信这个大家摸索摸索都可以画出来，就是画画。原理图主要是为了方便人类看得懂。
 - 绘制 2N3904，同理，不详细说明，如果有问题可以联系作者。
 
-### 绘制封装库
+### **4.3 绘制封装库**
 
-#### 碳膜电阻封装
+#### **碳膜电阻封装**
 
 同理也只绘制简单的碳膜电阻封装，原理都是一样的，如果学习过程中遇到问题，可以联系作者。
 
@@ -269,7 +273,7 @@ DXP -> Preferences -> System -> General
 
 打开原理图库，直接使用快捷键（ P + P ）或者上方工具栏。就会出现一个焊盘，根据栅格作为基准，放置第一个焊盘如下：
 
-![绘制7](images/绘制7.png)
+<div style="text-align:left;"><image src="images/绘制7.png" width="150px" style="display:inline-block;" alt="绘制7"></image></div>
 
 我们根据实物图可以看出，碳膜电阻共有两个引脚。我们选用的是直插电阻，在 PCB 上的封装是单列直插风格，就是两个焊盘在一条线上，具体间隔根据具体封装决定。
 
@@ -285,54 +289,57 @@ mil（中文译音：密耳），即千分之一英寸，等于0.0254mm（毫米
 我们一般用的排阵尺寸间距为 2.54mm，也就是 100mil。水平间隔 100mil 放置第二个焊盘。左上角有对应的做标尺，如果并不确定。放置之后按下快捷键（ R + M ）进行测量。然后进行微调即可。
 
 测量图如下：
-![焊盘测量](images/焊盘测量.png)
+
+<div style="text-align:left;"><image src="images/焊盘测量.png" width="300px" style="display:inline-block;" alt="焊盘测量"></image></div>
 
 由于我们要将电阻放倒焊接，经过测量，距离应该是 300mil，再
 次调整至 300mil。
 
 接下来，我们给固定好的焊盘绘制外边框，就是在 PCB 上显示的出的白色线条。点击选择 Top Overlay 层，按下 P + L 进行绘制。结果如下：
 
-![绘制8](images/绘制8.png)
+<div style="text-align:left;"><image src="images/绘制8.png" width="300px" style="display:inline-block;" alt="绘制8"></image></div>
 
 保存即可，这样一个电阻元件的封装就绘制完成了，如果是其他元器件同理。
 
-## 绘制原理图
+<div STYLE="page-break-after: always;"></div>
 
-点开原理图文件，我们将我们自己绘制的电阻放入原理图中，然后再加入光敏电阻，LED 灯以及 NPN 三极管。
+## **5. 绘制原理图**
 
-![摆放元件](images/摆放元件.png)
+点开原理图文件，我们将我们自己绘制的电阻放入原理图中，然后再加入光敏电阻，LED 灯以及 NPN 三极管。连线并完成原理图绘制。
 
-连线完成原理图绘制。
+<div style="text-align:left;"><image src="images/摆放元件.png" height="300px" style="display:inline-block;" alt="摆放元件"></image> <image src="images/原理图绘制.png" height="300px" style="display:inline-block;" alt="原理图绘制"></image></div>
 
-![原理图绘制](images/原理图绘制.png)
-
-### 添加封装
+### **5.1 添加封装**
 
 接下来，给每个元器件添加封装，双击元件。
 
-![添加封装](images/添加封装.png)
+<div style="text-align:left;"><image src="images/添加封装.png" width="400px" style="display:inline-block;" alt="添加封装"></image></div>
 
 在 Models 中点击 Add，选择 Footprint 模型，Browse 浏览文件，会看到我们之前绘制的封装。
 
-![添加封装2](images/添加封装2.png)
+<div style="text-align:left;"><image src="images/添加封装2.png" width="400px" style="display:inline-block;" alt="添加封装2"></image></div>
 
 选择点击 OK 即可。其他对应的元件也选择对应的封装即可。
 
-## 生成 PCB
+<div STYLE="page-break-after: always;"></div>
+
+## **6. 生成 PCB**
 
 原理图界面点击：Design -> Update PCB Document。
 
 在弹出界面，点击，Validate Changes 以及 Execute Changes。
 
-![生成原理图](images/生成原理图.png)
+<div style="text-align:left;"><image src="images/生成原理图.png" width="400px" style="display:inline-block;" alt="生成原理图"></image></div>
 
 Close 即可。
 
-## 绘制 PCB
+<div STYLE="page-break-after: always;"></div>
+
+## **7. 绘制 PCB**
 
 这时候自动跳转到了 PCB 绘制界面，一片漆黑，不要怕，其实元件已经被摆放在一边了，只是在界面之外。ctrl 滚轮，缩小界面。
 
-![绘制PCB](images/绘制PCB.png)
+<div style="text-align:left;"><image src="images/绘制PCB.png" width="400px" style="display:inline-block;" alt="绘制PCB"></image></div>
 
 将元件先摆放好。
 
@@ -340,7 +347,7 @@ Close 即可。
 
 摆放结束，切换层到 Top Layer 层，按下快捷键 P + T 进行连接。绘制完毕，如图所示。
 
-![绘制PCB2](images/绘制PCB2.png)
+<div style="text-align:left;"><image src="images/绘制PCB2.png" width="250px" style="display:inline-block;" alt="绘制PCB2"></image></div>
 
 切换到 Keep-Out Layer 层，绘制板子大小。绘制过程中，按下 shift + 空格 可以切换线型。
 
@@ -348,19 +355,21 @@ Close 即可。
 
 绘制结果如下：
 
-![绘制PCB3](images/绘制PCB3.png)
+<div style="text-align:left;"><image src="images/绘制PCB3.png" width="250px" style="display:inline-block;" alt="绘制PCB3"></image></div>
 
 选中边框，点击 Design -> Board Shape -> Define from selected objects。
 
 重新定义板子外形。最终如下。
 
-![绘制PCB4](images/绘制PCB4.png)
+<div style="text-align:left;"><image src="images/绘制PCB4.png" width="250px" style="display:inline-block;" alt="绘制PCB4"></image></div>
 
 按下 3，观察 3D 视图如下：
 
-![绘制PCB5](images/绘制PCB5.png)
+<div style="text-align:left;"><image src="images/绘制PCB5.png" width="250px" style="display:inline-block;" alt="绘制PCB5"></image></div>
 
-## 结束语
+<div STYLE="page-break-after: always;"></div>
+
+## **8. 结束语**
 
 其实这个案例非常简单，但是本文目的就是带大家走一遍过程，所谓入门，就是你知道一件事情的流程，知道如何实现。所谓进阶，就是一遍一遍的走这个流程，直到你闭着眼也知道怎么走。
 
@@ -370,7 +379,9 @@ Close 即可。
 
 之后会持续更新，敬请期待。
 
-## 引用致谢
+<div STYLE="page-break-after: always;"></div>
+
+## **9. 引用致谢**
 
 非常感谢如下链接：
 
@@ -380,28 +391,36 @@ Close 即可。
 
 > 强烈推荐： 上述博客推荐大家有时间看看，有些非常好，写的很详细，包括很多规则定义的进阶部分。
 
-## 附录一：快捷键
+<div STYLE="page-break-after: always;"></div>
 
-### 原理图 && PCB 通用
+## **附录一：快捷键**
+
+### **原理图 && PCB 通用**
 
 <div style="overflow-x: auto;
     margin-bottom: 24px;"><table border="1" cellspacing="0" cellpadding="0" style="color:rgb(51,51,51);line-height:26px;"><tbody><tr><td valign="top"><p align="center"><span style="font-family:'Microsoft YaHei';font-size:18px;">快捷键</span></p></td><td valign="top"><p align="center"><span style="font-family:'Microsoft YaHei';font-size:18px;">相关操作</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">当自动平移时，加速平移</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Y</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置元件时，上下翻转</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">X</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置元件时，左右翻转</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift+↑（↓、←、→）</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">在箭头方向以10个栅格为增量移动光标</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">↑、↓、←、→</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">在箭头方向以1个栅格为增量移动光标</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Esc</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">退出当前命令</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">End</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">刷新屏幕</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Home</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">以光标为中心刷新屏幕</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">PageDown或Ctrl+鼠标滑轮</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">以光标为中心缩小画面</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">PageUp或Ctrl+鼠标滑轮</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">以光标为中心放大画面</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">鼠标滑轮</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">上下移动画面</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift+鼠标滑轮</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">左右移动画面</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+Z</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">撤销上一次操作</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+Y</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">重复上一次操作</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+A</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">选择全部</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+S</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">存储当前文件</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+C</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">复制</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+X</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">剪切</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+V</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">粘贴</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+R</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">复制并重复粘贴选中的对象</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Delete</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">删除</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">V+D</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">显示整个文档</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">V+F</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">显示所有选中</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Tab</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">编辑正在放置的元件属性</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift+C</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">取消过滤</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift+F</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">查找相似对象</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Y</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Filter选单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">F11</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开或关闭Inspector面板</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">F12</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开或关闭Sch Filter面板</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">H</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开Help菜单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">F1</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开Knowledge center菜单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">W</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开Window菜单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">R</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开Report菜单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">T</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开Tools菜单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开Place菜单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">D</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开Design菜单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">C</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开Project菜单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift+F4</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">将所有打开的窗口平均平铺在工作区内</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+Alt+O</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">选择需要打开的文件</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Alt+F5</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">全屏显示工作区</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+Home</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">跳转到绝对坐标原点</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+End</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">跳转到当前坐标原点</span></p></td></tr></tbody></table></div>
 
+<div STYLE="page-break-after: always;"></div>
+
 <div style="overflow-x: auto;
     margin-bottom: 24px;"><table border="1" cellspacing="0" cellpadding="0"><tbody><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">鼠标左击 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">选择鼠标位置的文档 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">鼠标双击</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">编辑鼠标位置的文档</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">鼠标右击</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">显示相关的弹出菜单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl + F4</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">关闭当前文档</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl + Tab</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">循环切换所打开的文档</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Alt + F4</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">关闭设计浏览器DXP</span></p></td></tr></tbody></table></div>
 
-### 原理图编辑器快捷键
+### **原理图编辑器快捷键**
 
 <div style="overflow-x: auto;
     margin-bottom: 24px;"><table border="1" cellspacing="0" cellpadding="0" style="color:rgb(51,51,51);line-height:26px;"><tbody><tr><td valign="top"><p align="center"><span style="font-family:'Microsoft YaHei';font-size:18px;">快捷键</span></p></td><td valign="top"><p align="center"><span style="font-family:'Microsoft YaHei';font-size:18px;">相关操作</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Alt</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">在水平和垂直线上限制</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Spacebar</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">将正在移动的物体旋转90<sup>。</sup></span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift+Spacebar</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">在放置导线、总线和多边形填充时，设置放置模式</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Backspace</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">在放置导线、总线和多边形填充时，移除最后一个顶点</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">鼠标左键单击对象的顶点不放，</span></p><p><span style="font-family:'Microsoft YaHei';font-size:18px;">按“Delete”键不放</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">删除选中线的顶点</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">鼠标左键单击对象上任意点不放，</span></p><p><span style="font-family:'Microsoft YaHei';font-size:18px;">按“Insert”键不放</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">在选中线处添加顶点</span></p></td></tr></tbody></table></div>
 
+<div STYLE="page-break-after: always;"></div>
+
 <div style="overflow-x: auto;
     margin-bottom: 24px;"><table border="1" cellspacing="0" cellpadding="0"><tbody><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">查询 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">T+C</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">查询原理图对应PCB元器件位置</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">T+O</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">查找元件</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+P</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置元件</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+W</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置导线</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+B</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置总线</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+U</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">绘制总线分支线</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+M</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置电气节点</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+Power</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置电源和接地符号</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">D+O</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置网络标签</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+N</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置网络标签</span></p></td></tr></tbody></table></div>
 
-### PCB 编辑器快捷键
+### **PCB 编辑器快捷键**
 
 <div style="overflow-x: auto;
     margin-bottom: 24px;"><table border="1" cellspacing="0" cellpadding="0" style="color:rgb(51,51,51);line-height:26px;"><tbody><tr><td valign="top"><p align="center"><span style="font-family:'Microsoft YaHei';font-size:18px;">快捷键</span></p></td><td valign="top"><p align="center"><span style="font-family:'Microsoft YaHei';font-size:18px;">相关操作</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift+R</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">切换3种布线模式</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift+E</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开或关闭捕获电气栅格功能</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+G</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">弹出捕获栅格对话框</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">G</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">弹出捕获栅格选单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Backspace</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">在放置导线时，删除最后一个拐角</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift+Spacebar</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">旋转导线时设置拐角模式</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift+S</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开或关闭单层模式</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">O+D</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">显示或隐藏Preference对话框</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">L</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">浏览Board Layers对话框</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+H</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">选择连接层</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+Shift+Left_Click</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">切断线</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">+</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">切换工作层面为下一层</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">—</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">切换工作层面为上一层</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">暂时不显示电气栅格</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+M</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">测量距离</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift+Spacebar</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">旋转移动的物体（顺时针）</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Spacebar</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">旋转移动的物体（逆时针）</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Q</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">单位切换</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">I</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开Component placement菜单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">U</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开Un-Route菜单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">L</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开Board layer&amp;Colors菜单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">F2</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开Insight菜单</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+PgUp</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">将工作区放大400%</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Ctrl+PgDn</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">将工作区缩小400%</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift+PgUp</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">以很小的增量放大整张图纸</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">Shift+PgDn</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">以很小的增量缩小整张图纸</span></p></td></tr></tbody></table></div>
+
+<div STYLE="page-break-after: always;"></div>
 
 <div style="overflow-x: auto;
     margin-bottom: 24px;"><table border="1" cellspacing="0" cellpadding="0"><tbody><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">S+A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">全选 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">E+O+S</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">设置参考点</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">shift+F</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">点击器件查询器件信息</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">选中元器件+L</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">元器件换层</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">E+S+N</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">选择网络线</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">E+D</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">删除信号线</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">V+S</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">最底层出现</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">T+P</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">显示preferences窗口</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">T+C</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">查询PCB元器件对应原理图位置</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">[&nbsp; ]</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">调节PCB亮度</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">V+C+S</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">显示网络连接</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">V+C+H</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">隐藏网络连接</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">ctrl+tab</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">打开的各个文件之间的切换</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+V</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置过孔</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+L</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">画线</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+S</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置文字</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+P</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置圆盘</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+V</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置过孔</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+T</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">布线</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+I</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">差分布线</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+G</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">铺铜</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">CTRL+A</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">选择所有信号</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">CTRL+B</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">选择网络信号</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">E+S+Y</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">选择单层上的所有信号</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">V+C+S</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">显示网络连接</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">V+C+H</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">隐藏网络连接</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">CTRL+D</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">试图配置显示和隐藏</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">T+E</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">加泪滴</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">P+C</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放置元器件</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">M+M</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">移动元器件</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">R+B</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">查看PCB信息</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">CTRL+R</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">一次复制，连续多次粘贴</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">J+L</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">定位到指定的坐标位置</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">J+C</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">定位到指定的元件处</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">R+L</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">查看信号线长度</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">SHIFT+M</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">放大镜</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">D+O</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">板卡选项</span></p></td></tr><tr><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">G+G</span></p></td><td valign="top"><p><span style="font-family:'Microsoft YaHei';font-size:18px;">设置网格距离</span></p></td></tr></tbody></table></div>
